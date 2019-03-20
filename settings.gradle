@@ -1,0 +1,8 @@
+rootProject.name = 'oj'
+include 'core'
+include 'api'
+include 'mobile'
+include 'batch'
+include 'admin'
+include 'process'
+

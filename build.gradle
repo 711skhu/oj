@@ -77,33 +77,3 @@ subprojects {
         }
     }
 }
-
-project(':api') {
-    dependencies {
-        compile project(':core')
-    }
-}
-
-project(':batch') {
-    dependencies {
-        compile project(':core')
-    }
-}
-
-project(':mobile') {
-    dependencies {
-        compile project(':core')
-    }
-}
-
-project(':admin') {
-    dependencies {
-        compile project(':core')
-    }
-}
-
-project(':process') {
-    dependencies {
-        compile project(':core')
-    }
-}

@@ -65,7 +65,7 @@ subprojects {
         // test
         testImplementation 'org.junit.jupiter:junit-jupiter:5.4.1'
         testCompile group: 'org.mockito', name: 'mockito-junit-jupiter', version: '2.18.3'
-        
+
         testCompile 'org.springframework.boot:spring-boot-starter-test'
         testCompile 'org.springframework.security:spring-security-test'
     }
@@ -75,5 +75,35 @@ subprojects {
         testLogging {
             events "passed", "skipped", "failed"
         }
+    }
+}
+
+project(':api') {
+    dependencies {
+        compile project(':core')
+    }
+}
+
+project(':batch') {
+    dependencies {
+        compile project(':core')
+    }
+}
+
+project(':mobile') {
+    dependencies {
+        compile project(':core')
+    }
+}
+
+project(':admin') {
+    dependencies {
+        compile project(':core')
+    }
+}
+
+project(':process') {
+    dependencies {
+        compile project(':core')
     }
 }

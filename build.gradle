@@ -57,6 +57,7 @@ subprojects {
         // util
         compile 'com.google.guava:guava:27.1-jre'
         compile 'org.apache.commons:commons-lang3:3.8.1'
+        implementation 'one.util:streamex:0.6.8'
 
         // lombok
         compileOnly 'org.projectlombok:lombok'
